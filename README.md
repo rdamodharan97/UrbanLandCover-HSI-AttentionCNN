@@ -110,8 +110,7 @@ The `Attentive3DCNN` model was trained using the following configuration and str
 
 To gain insights into our `Attentive3DCNN` model's decision-making process and understand which input features contribute most to its predictions, we implemented an explainability technique called **3D Gradient-weighted Class Activation Mapping (3D Grad-CAM)**.
 
-*   **Briefly explain the use of 3D Grad-CAM:**
-    3D Grad-CAM is an adaptation of the well-known Grad-CAM technique, specifically tailored for models processing volumetric data like our 3D hyperspectral patches (`(Bands, Height, Width)`). It helps visualize the regions within the input 3D patch that were most influential in determining a particular class prediction. The process involves:
+* 3D Grad-CAM is an adaptation of the well-known Grad-CAM technique, specifically tailored for models processing volumetric data like our 3D hyperspectral patches (`(Bands, Height, Width)`). It helps visualize the regions within the input 3D patch that were most influential in determining a particular class prediction. The process involves:
     1.  **Targeting a Layer:** Selecting a late convolutional layer in the network (in our case, `model.relu3_a`, the output of the third convolutional block before aggressive pooling).
     2.  **Gradient Calculation:** Computing the gradients of the score for the target class with respect to the feature maps of this chosen target layer.
     3.  **Neuron Importance Weights:** These gradients are global average pooled across the feature map dimensions (Depth, Height, Width of the feature map) to obtain weights indicating the "importance" of each feature channel for the target class.
