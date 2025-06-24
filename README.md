@@ -98,14 +98,11 @@ The `Attentive3DCNN` model was trained using the following configuration and str
 ### Quantitative Metrics
 *   Overall Accuracy (OA): **99.60%**
 *   Kappa Coefficient (Κ): **0.9947**
-*   Embed the Confusion Matrix image:
-    `![Confusion Matrix](visualizations/confusion_matrix.png)`
+*   ![Confusion Matrix](visualizations/confusion_matrix.png)
 
 ### Visualizations
-*   Embed the Ground Truth map image:
-    `![Ground Truth](visualizations/ground_truth.png)`
-*   Embed the Training/Validation curves image:
-    `![Training Curves](visualizations/training_dynamics.png)`
+*   ![Ground Truth](visualizations/ground_truth.png)
+*   ![Training Curves](visualizations/training_dynamics.png)
 
 ## Explainable AI (XAI)
 
@@ -122,11 +119,8 @@ To gain insights into our `Attentive3DCNN` model's decision-making process and u
 
     By visualizing this 3D heatmap (e.g., by averaging it spatially, overlaying it on the original patch, or viewing individual spectral slices), we can understand which specific spectral-spatial parts of the input patch the model "focused" on to make its prediction. This enhances model transparency and provides valuable diagnostic information.
 
-    *(You can then embed an example Grad-CAM visualization image here, as shown in the previous README template, e.g.:)*
-    `![Grad-CAM Example](visualizations/grad_cam_meadows.png)`
-    *(And add a brief caption or discussion of what your specific Grad-CAM example showed, like the model focusing on the top-right corner for the "Meadows" class.)*
-*   Embed an example Grad-CAM visualization:
-    `![Grad-CAM Example](visualizations/grad_cam_sample.png)`
+
+    ![Grad-CAM Example](visualizations/grad_cam_sample.png)
 
 ## Setup and Usage
 
