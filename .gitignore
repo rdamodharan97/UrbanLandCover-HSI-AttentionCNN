@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environment (if you ever use one locally)
+.env/
+.venv/
+env/
+venv/
+
+# OS specific
+.DS_Store
+Thumbs.db
