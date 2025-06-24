@@ -102,6 +102,7 @@ The `Attentive3DCNN` model was trained using the following configuration and str
 
 ### Visualizations
 *   ![Ground Truth](visualizations/ground_truth.png)
+*   ![Ground Truth](visualizations/false_colour_hsi.png)
 *   ![Training Curves](visualizations/training_dynamics.png)
 
 ## Explainable AI (XAI)
